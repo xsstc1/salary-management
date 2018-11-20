@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'dva';
-import { formatMessage, FormattedMessage } from 'umi/locale';
-import Link from 'umi/link';
-import { Checkbox, Alert, Icon } from 'antd';
+import { Checkbox, Alert } from 'antd';
 import Login from '@/components/Login';
 import styles from './Login.less';
 
-const { Tab, UserName, Password, Mobile, Captcha, Submit } = Login;
+const { UserName, Password, Submit } = Login;
 
 @connect(({ login, loading }) => ({
   login,
@@ -64,7 +62,7 @@ class LoginPage extends Component {
   );
 
   render() {
-    const { login, submitting } = this.props;
+    const { submitting } = this.props;
     const { type, autoLogin } = this.state;
     return (
       <div className={styles.main}>
@@ -85,15 +83,13 @@ class LoginPage extends Component {
 
           <div>
             <Checkbox checked={autoLogin} onChange={this.changeAutoLogin}>
-              <FormattedMessage id="app.login.remember-me" />
+              记住密码
             </Checkbox>
             {/* <a style={{ float: 'right' }} href="">
               <FormattedMessage id="app.login.forgot-password" />
             </a> */}
           </div>
-          <Submit loading={submitting}>
-            <FormattedMessage id="app.login.login" />
-          </Submit>
+          <Submit loading={submitting}>登 录</Submit>
           {/* <div className={styles.other}>
             <FormattedMessage id="app.login.sign-in-with" />
             <Icon type="alipay-circle" className={styles.icon} theme="outlined" />
