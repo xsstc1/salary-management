@@ -139,12 +139,12 @@ let routes = [
       },
       {
         "path": "/list",
-        "icon": "table",
-        "name": "list",
+        "icon": "user",
+        "name": "employee",
         "routes": [
           {
             "path": "/list/table-list",
-            "name": "searchtable",
+            "name": "roster",
             "component": dynamic({ loader: () => import('../List/TableList'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
             "exact": true
           },

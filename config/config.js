@@ -16,7 +16,7 @@ const plugins = [
         ie: 11,
       },
       locale: {
-        enable: false, // default false
+        enable: true, // default false
         default: 'zh-CN', // default zh-CN
         baseNavigator: false, // default true, when it is true, will use `navigator.language` overwrite default
       },

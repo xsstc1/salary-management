@@ -87,15 +87,15 @@ export default [
           },
         ],
       },
-      // list
+      // 员工管理
       {
         path: '/list',
-        icon: 'table',
-        name: 'list',
+        icon: 'user',
+        name: 'employee',
         routes: [
           {
             path: '/list/table-list',
-            name: 'searchtable',
+            name: 'roster',
             component: './List/TableList',
           },
           {
