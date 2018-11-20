@@ -2,14 +2,14 @@ import React from 'react';
 import { Router as DefaultRouter, Route, Switch } from 'react-router-dom';
 import dynamic from 'umi/dynamic';
 import renderRoutes from 'umi/_renderRoutes';
-import RendererWrapper0 from '/Users/xs/Development/ReactProject/salary-management/src/pages/.umi/LocaleWrapper.jsx'
+import RendererWrapper0 from 'S:/Development/ReactProject/salary-management/src/pages/.umi/LocaleWrapper.jsx'
 
 let Router = require('dva/router').routerRedux.ConnectedRouter;
 
 let routes = [
   {
     "path": "/user",
-    "component": dynamic({ loader: () => import('../../layouts/UserLayout'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+    "component": dynamic({ loader: () => import('../../layouts/UserLayout'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
     "routes": [
       {
         "path": "/user",
@@ -18,27 +18,27 @@ let routes = [
       },
       {
         "path": "/user/login",
-        "component": dynamic({ loader: () => import('../User/Login'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+        "component": dynamic({ loader: () => import('../User/Login'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
         "exact": true
       },
       {
         "path": "/user/register",
-        "component": dynamic({ loader: () => import('../User/Register'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+        "component": dynamic({ loader: () => import('../User/Register'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
         "exact": true
       },
       {
         "path": "/user/register-result",
-        "component": dynamic({ loader: () => import('../User/RegisterResult'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+        "component": dynamic({ loader: () => import('../User/RegisterResult'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
         "exact": true
       },
       {
-        "component": () => React.createElement(require('/Users/xs/Development/ReactProject/salary-management/node_modules/_umi-build-dev@1.2.6@umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+        "component": () => React.createElement(require('S:/Development/ReactProject/salary-management/node_modules/_umi-build-dev@1.2.6@umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
       }
     ]
   },
   {
     "path": "/",
-    "component": dynamic({ loader: () => import('../../layouts/BasicLayout'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+    "component": dynamic({ loader: () => import('../../layouts/BasicLayout'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
     "Routes": [require('../Authorized').default],
     "authority": [
       "admin",
@@ -58,23 +58,23 @@ let routes = [
           {
             "path": "/dashboard/analysis",
             "name": "analysis",
-            "component": dynamic({ loader: () => import('../Dashboard/Analysis'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+            "component": dynamic({ loader: () => import('../Dashboard/Analysis'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
             "exact": true
           },
           {
             "path": "/dashboard/monitor",
             "name": "monitor",
-            "component": dynamic({ loader: () => import('../Dashboard/Monitor'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+            "component": dynamic({ loader: () => import('../Dashboard/Monitor'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
             "exact": true
           },
           {
             "path": "/dashboard/workplace",
             "name": "workplace",
-            "component": dynamic({ loader: () => import('../Dashboard/Workplace'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+            "component": dynamic({ loader: () => import('../Dashboard/Workplace'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
             "exact": true
           },
           {
-            "component": () => React.createElement(require('/Users/xs/Development/ReactProject/salary-management/node_modules/_umi-build-dev@1.2.6@umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+            "component": () => React.createElement(require('S:/Development/ReactProject/salary-management/node_modules/_umi-build-dev@1.2.6@umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
           }
         ]
       },
@@ -86,13 +86,13 @@ let routes = [
           {
             "path": "/form/basic-form",
             "name": "basicform",
-            "component": dynamic({ loader: () => import('../Forms/BasicForm'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+            "component": dynamic({ loader: () => import('../Forms/BasicForm'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
             "exact": true
           },
           {
             "path": "/form/step-form",
             "name": "stepform",
-            "component": dynamic({ loader: () => import('../Forms/StepForm'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+            "component": dynamic({ loader: () => import('../Forms/StepForm'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
             "hideChildrenInMenu": true,
             "routes": [
               {
@@ -103,23 +103,23 @@ let routes = [
               {
                 "path": "/form/step-form/info",
                 "name": "info",
-                "component": dynamic({ loader: () => import('../Forms/StepForm/Step1'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+                "component": dynamic({ loader: () => import('../Forms/StepForm/Step1'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
                 "exact": true
               },
               {
                 "path": "/form/step-form/confirm",
                 "name": "confirm",
-                "component": dynamic({ loader: () => import('../Forms/StepForm/Step2'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+                "component": dynamic({ loader: () => import('../Forms/StepForm/Step2'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
                 "exact": true
               },
               {
                 "path": "/form/step-form/result",
                 "name": "result",
-                "component": dynamic({ loader: () => import('../Forms/StepForm/Step3'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+                "component": dynamic({ loader: () => import('../Forms/StepForm/Step3'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
                 "exact": true
               },
               {
-                "component": () => React.createElement(require('/Users/xs/Development/ReactProject/salary-management/node_modules/_umi-build-dev@1.2.6@umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+                "component": () => React.createElement(require('S:/Development/ReactProject/salary-management/node_modules/_umi-build-dev@1.2.6@umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
               }
             ]
           },
@@ -129,11 +129,11 @@ let routes = [
             "authority": [
               "admin"
             ],
-            "component": dynamic({ loader: () => import('../Forms/AdvancedForm'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+            "component": dynamic({ loader: () => import('../Forms/AdvancedForm'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
             "exact": true
           },
           {
-            "component": () => React.createElement(require('/Users/xs/Development/ReactProject/salary-management/node_modules/_umi-build-dev@1.2.6@umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+            "component": () => React.createElement(require('S:/Development/ReactProject/salary-management/node_modules/_umi-build-dev@1.2.6@umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
           }
         ]
       },
@@ -145,25 +145,25 @@ let routes = [
           {
             "path": "/list/table-list",
             "name": "searchtable",
-            "component": dynamic({ loader: () => import('../List/TableList'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+            "component": dynamic({ loader: () => import('../List/TableList'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
             "exact": true
           },
           {
             "path": "/list/basic-list",
             "name": "basiclist",
-            "component": dynamic({ loader: () => import('../List/BasicList'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+            "component": dynamic({ loader: () => import('../List/BasicList'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
             "exact": true
           },
           {
             "path": "/list/card-list",
             "name": "cardlist",
-            "component": dynamic({ loader: () => import('../List/CardList'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+            "component": dynamic({ loader: () => import('../List/CardList'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
             "exact": true
           },
           {
             "path": "/list/search",
             "name": "searchlist",
-            "component": dynamic({ loader: () => import('../List/List'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+            "component": dynamic({ loader: () => import('../List/List'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
             "routes": [
               {
                 "path": "/list/search",
@@ -173,28 +173,28 @@ let routes = [
               {
                 "path": "/list/search/articles",
                 "name": "articles",
-                "component": dynamic({ loader: () => import('../List/Articles'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+                "component": dynamic({ loader: () => import('../List/Articles'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
                 "exact": true
               },
               {
                 "path": "/list/search/projects",
                 "name": "projects",
-                "component": dynamic({ loader: () => import('../List/Projects'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+                "component": dynamic({ loader: () => import('../List/Projects'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
                 "exact": true
               },
               {
                 "path": "/list/search/applications",
                 "name": "applications",
-                "component": dynamic({ loader: () => import('../List/Applications'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+                "component": dynamic({ loader: () => import('../List/Applications'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
                 "exact": true
               },
               {
-                "component": () => React.createElement(require('/Users/xs/Development/ReactProject/salary-management/node_modules/_umi-build-dev@1.2.6@umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+                "component": () => React.createElement(require('S:/Development/ReactProject/salary-management/node_modules/_umi-build-dev@1.2.6@umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
               }
             ]
           },
           {
-            "component": () => React.createElement(require('/Users/xs/Development/ReactProject/salary-management/node_modules/_umi-build-dev@1.2.6@umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+            "component": () => React.createElement(require('S:/Development/ReactProject/salary-management/node_modules/_umi-build-dev@1.2.6@umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
           }
         ]
       },
@@ -206,7 +206,7 @@ let routes = [
           {
             "path": "/profile/basic",
             "name": "basic",
-            "component": dynamic({ loader: () => import('../Profile/BasicProfile'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+            "component": dynamic({ loader: () => import('../Profile/BasicProfile'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
             "exact": true
           },
           {
@@ -215,11 +215,11 @@ let routes = [
             "authority": [
               "admin"
             ],
-            "component": dynamic({ loader: () => import('../Profile/AdvancedProfile'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+            "component": dynamic({ loader: () => import('../Profile/AdvancedProfile'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
             "exact": true
           },
           {
-            "component": () => React.createElement(require('/Users/xs/Development/ReactProject/salary-management/node_modules/_umi-build-dev@1.2.6@umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+            "component": () => React.createElement(require('S:/Development/ReactProject/salary-management/node_modules/_umi-build-dev@1.2.6@umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
           }
         ]
       },
@@ -231,17 +231,17 @@ let routes = [
           {
             "path": "/result/success",
             "name": "success",
-            "component": dynamic({ loader: () => import('../Result/Success'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+            "component": dynamic({ loader: () => import('../Result/Success'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
             "exact": true
           },
           {
             "path": "/result/fail",
             "name": "fail",
-            "component": dynamic({ loader: () => import('../Result/Error'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+            "component": dynamic({ loader: () => import('../Result/Error'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
             "exact": true
           },
           {
-            "component": () => React.createElement(require('/Users/xs/Development/ReactProject/salary-management/node_modules/_umi-build-dev@1.2.6@umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+            "component": () => React.createElement(require('S:/Development/ReactProject/salary-management/node_modules/_umi-build-dev@1.2.6@umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
           }
         ]
       },
@@ -253,30 +253,30 @@ let routes = [
           {
             "path": "/exception/403",
             "name": "not-permission",
-            "component": dynamic({ loader: () => import('../Exception/403'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+            "component": dynamic({ loader: () => import('../Exception/403'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
             "exact": true
           },
           {
             "path": "/exception/404",
             "name": "not-find",
-            "component": dynamic({ loader: () => import('../Exception/404'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+            "component": dynamic({ loader: () => import('../Exception/404'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
             "exact": true
           },
           {
             "path": "/exception/500",
             "name": "server-error",
-            "component": dynamic({ loader: () => import('../Exception/500'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+            "component": dynamic({ loader: () => import('../Exception/500'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
             "exact": true
           },
           {
             "path": "/exception/trigger",
             "name": "trigger",
             "hideInMenu": true,
-            "component": dynamic({ loader: () => import('../Exception/TriggerException'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+            "component": dynamic({ loader: () => import('../Exception/TriggerException'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
             "exact": true
           },
           {
-            "component": () => React.createElement(require('/Users/xs/Development/ReactProject/salary-management/node_modules/_umi-build-dev@1.2.6@umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+            "component": () => React.createElement(require('S:/Development/ReactProject/salary-management/node_modules/_umi-build-dev@1.2.6@umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
           }
         ]
       },
@@ -288,7 +288,7 @@ let routes = [
           {
             "path": "/account/center",
             "name": "center",
-            "component": dynamic({ loader: () => import('../Account/Center/Center'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+            "component": dynamic({ loader: () => import('../Account/Center/Center'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
             "routes": [
               {
                 "path": "/account/center",
@@ -297,28 +297,28 @@ let routes = [
               },
               {
                 "path": "/account/center/articles",
-                "component": dynamic({ loader: () => import('../Account/Center/Articles'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+                "component": dynamic({ loader: () => import('../Account/Center/Articles'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
                 "exact": true
               },
               {
                 "path": "/account/center/applications",
-                "component": dynamic({ loader: () => import('../Account/Center/Applications'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+                "component": dynamic({ loader: () => import('../Account/Center/Applications'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
                 "exact": true
               },
               {
                 "path": "/account/center/projects",
-                "component": dynamic({ loader: () => import('../Account/Center/Projects'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+                "component": dynamic({ loader: () => import('../Account/Center/Projects'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
                 "exact": true
               },
               {
-                "component": () => React.createElement(require('/Users/xs/Development/ReactProject/salary-management/node_modules/_umi-build-dev@1.2.6@umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+                "component": () => React.createElement(require('S:/Development/ReactProject/salary-management/node_modules/_umi-build-dev@1.2.6@umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
               }
             ]
           },
           {
             "path": "/account/settings",
             "name": "settings",
-            "component": dynamic({ loader: () => import('../Account/Settings/Info'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+            "component": dynamic({ loader: () => import('../Account/Settings/Info'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
             "routes": [
               {
                 "path": "/account/settings",
@@ -327,31 +327,31 @@ let routes = [
               },
               {
                 "path": "/account/settings/base",
-                "component": dynamic({ loader: () => import('../Account/Settings/BaseView'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+                "component": dynamic({ loader: () => import('../Account/Settings/BaseView'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
                 "exact": true
               },
               {
                 "path": "/account/settings/security",
-                "component": dynamic({ loader: () => import('../Account/Settings/SecurityView'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+                "component": dynamic({ loader: () => import('../Account/Settings/SecurityView'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
                 "exact": true
               },
               {
                 "path": "/account/settings/binding",
-                "component": dynamic({ loader: () => import('../Account/Settings/BindingView'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+                "component": dynamic({ loader: () => import('../Account/Settings/BindingView'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
                 "exact": true
               },
               {
                 "path": "/account/settings/notification",
-                "component": dynamic({ loader: () => import('../Account/Settings/NotificationView'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+                "component": dynamic({ loader: () => import('../Account/Settings/NotificationView'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
                 "exact": true
               },
               {
-                "component": () => React.createElement(require('/Users/xs/Development/ReactProject/salary-management/node_modules/_umi-build-dev@1.2.6@umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+                "component": () => React.createElement(require('S:/Development/ReactProject/salary-management/node_modules/_umi-build-dev@1.2.6@umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
               }
             ]
           },
           {
-            "component": () => React.createElement(require('/Users/xs/Development/ReactProject/salary-management/node_modules/_umi-build-dev@1.2.6@umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+            "component": () => React.createElement(require('S:/Development/ReactProject/salary-management/node_modules/_umi-build-dev@1.2.6@umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
           }
         ]
       },
@@ -363,25 +363,25 @@ let routes = [
           {
             "path": "/salaryAdmin/salarySetting",
             "name": "薪资管理",
-            "component": dynamic({ loader: () => import('../salaryAdmin/salarySetting'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+            "component": dynamic({ loader: () => import('../salaryAdmin/salarySetting'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
             "exact": true
           },
           {
-            "component": () => React.createElement(require('/Users/xs/Development/ReactProject/salary-management/node_modules/_umi-build-dev@1.2.6@umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+            "component": () => React.createElement(require('S:/Development/ReactProject/salary-management/node_modules/_umi-build-dev@1.2.6@umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
           }
         ]
       },
       {
-        "component": dynamic({ loader: () => import('../404'), loading: require('/Users/xs/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
+        "component": dynamic({ loader: () => import('../404'), loading: require('S:/Development/ReactProject/salary-management/src/components/PageLoading/index').default }),
         "exact": true
       },
       {
-        "component": () => React.createElement(require('/Users/xs/Development/ReactProject/salary-management/node_modules/_umi-build-dev@1.2.6@umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+        "component": () => React.createElement(require('S:/Development/ReactProject/salary-management/node_modules/_umi-build-dev@1.2.6@umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
       }
     ]
   },
   {
-    "component": () => React.createElement(require('/Users/xs/Development/ReactProject/salary-management/node_modules/_umi-build-dev@1.2.6@umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+    "component": () => React.createElement(require('S:/Development/ReactProject/salary-management/node_modules/_umi-build-dev@1.2.6@umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
   }
 ];
 window.g_plugins.applyForEach('patchRoutes', { initialValue: routes });
